@@ -1,2 +1,2 @@
-import Work from './Work';
-export default Work;
+import Projects from './Projects';
+export default Projects;
