@@ -7,17 +7,24 @@ const Projects = ({ user }) => {
   return (
     <Layout user={user}>
       <div>
-        <SectionTitle>Projects</SectionTitle>
+        <SectionTitle style={{fontFamily: 'Yusei Magic'}}>Projects</SectionTitle>
         <ul>
           {user.projects.map((project, i) => (
             <ProjectItem key={i}>
               <ProjectTitle>{project.name}</ProjectTitle>
-              <p>{project.summary}</p>
+              {console.log(project.images)}
+              <img src={project.images[0].resolutions.thumbnail.url} alt= 'project'/>
+              <p style={{fontFamily: 'Josefin Sans'}}>{project.summary}</p>
               <SkillContainer>
                 {[...project.languages, ...project.libraries].map((item, j) => (
                   <Pill key={j}>{item}</Pill>
                 ))}
               </SkillContainer>
+              <ul>
+                <li style={{fontFamily: 'Yusei Magic', fontSize: 'Large'}}> <a href={project.githubUrl} target='_blank' rel='noreferrer'>Github Repository</a></li>
+                <br></br>
+                <li style={{fontFamily: 'Yusei Magic', fontSize: 'Large'}}> <a href={project.website} target='_blank' rel='noreferrer'>Check It Out!</a></li>
+              </ul>
             </ProjectItem>
           ))}
         </ul>

@@ -12,7 +12,7 @@ const Layout = ({ user, children }) => {
       <Sidebar />
       <StyledContent>
         <UserHeader user={user} />
-        <div>{children}</div>
+        <div className='info'>{children}</div>
       </StyledContent>
     </>
   );

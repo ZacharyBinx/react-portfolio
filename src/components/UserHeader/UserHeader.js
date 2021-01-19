@@ -9,10 +9,10 @@ const UserHeader = ({ user }) => {
 
   return (
     <HeaderContainer isHome={location.pathname === '/'}>
-      <Header>
+      <Header style={{fontFamily: 'Josefin Sans'}}>
         <Image src={user.basics.picture} />
         <div>
-          <h2>{user.basics.name}</h2>
+          <h2 style={{fontFamily: 'Yusei Magic'}}>{user.basics.name}</h2>
           <h4>
             <a
               href={`https://gitconnected.com/${user.basics.username}`}
@@ -40,7 +40,7 @@ const UserHeader = ({ user }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span>View Résumé</span>
+          <span style={{fontFamily: 'Yusei Magic'}}>View Résumé</span>
           <ArrowRight16 />
         </ViewResumeLink>
       </div>

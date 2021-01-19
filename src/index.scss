@@ -1,11 +1,33 @@
 @import '@carbon/themes/scss/themes';
 $carbon--theme: $carbon--theme--g100;
 @include carbon--theme();
-
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 a {
   color: $text-04;
+}
+
+
+main.bx--content {
+  background: url('./assets/mainBG.jpg');
+  background-size: auto;
+  background-position: center;
+}
+
+.info {
+  background: rgba(0, 0, 0, 0.5);
+  width: 60%;
+  border: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.sc-kEjbxe.jqKjwc, .sc-iqHYGH.iTIoDL, .sc-dQppl.japAwx{
+  padding: 10px;
+}
+
+.iHuzHb, .kYtvCK, .p{
+  margin-left: 0.75rem;
 }
 
 .bx--side-nav__navigation {
@@ -19,14 +41,17 @@ a.bx--side-nav__link--current > span.bx--side-nav__link-text {
 }
 
 .bx--side-nav__item:not(.bx--side-nav__item--active)
-  > .bx--side-nav__link:hover {
+> .bx--side-nav__link:hover {
   background-color: $ui-01;
   color: $text-04;
 }
 
 a.bx--side-nav__link > .bx--side-nav__link-text,
 .bx--side-nav__item:not(.bx--side-nav__item--active)
-  > .bx--side-nav__link:hover
-  > span {
+> .bx--side-nav__link:hover
+> span {
   color: $text-04;
+}
+.h2, .h3{
+  font-family: 'Yusei Magic';
 }

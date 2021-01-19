@@ -7,11 +7,11 @@ const Me = ({ user }) => {
   return (
     <Layout user={user}>
       <div>
-        <SectionTitle>About Me</SectionTitle>
-        <Paragraph>{user.basics.summary}</Paragraph>
+        <SectionTitle style={{fontFamily: 'Yusei Magic'}}>About Me</SectionTitle>
+        <Paragraph  style={{fontFamily: 'Josefin Sans'}}>{user.basics.summary}</Paragraph>
       </div>
       <div>
-        <SectionTitle>Skills</SectionTitle>
+        <SectionTitle style={{fontFamily: 'Yusei Magic'}}>Skills</SectionTitle>
         <div>
           {user.skills.map(skill => (
             <Pill key={skill.name}>{skill.name}</Pill>
@@ -19,10 +19,10 @@ const Me = ({ user }) => {
         </div>
       </div>
       <div>
-        <SectionTitle>Profiles</SectionTitle>
+        <SectionTitle style={{fontFamily: 'Yusei Magic'}}>Profiles</SectionTitle>
         <ul>
           {user.basics.profiles.map((profile, i) => (
-            <ProfileLink key={profile.network}>
+            <ProfileLink style={{fontFamily: 'Josefin Sans'}} key={profile.network}>
               {i !== 0 && ' | '}
               <a href={profile.url} target="_blank" rel="noreferrer noopener">
                 {profile.network}
