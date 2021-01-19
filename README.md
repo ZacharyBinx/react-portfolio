@@ -5,13 +5,11 @@
 * [Description](#description)
 * [Check It Out](#check-it-out)
 * [Usage](#usage)
-* [Contribute](#contribute)
-* [Test](#test)
 * [License](#license)
 * [Questions](#questions)
 ## Description
 
-A portfolio created using gitconnected and React to call updated personal information. Information stays updated as I grow in this industry. [Here]() is a link to the finished project!
+A portfolio created using gitconnected and React to call updated personal information. Information stays updated as I grow in this industry. [Here](https://silly-mahavira-31f6b6.netlify.app/) is a link to the finished project!
 
 ## Check It Out
 
