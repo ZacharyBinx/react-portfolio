@@ -3,7 +3,7 @@
 ## Table Of Contents
 <!-- click each bullet to move to the associated section -->
 * [Description](#description)
-* [Install](#install)
+* [Check It Out](#check-it-out)
 * [Usage](#usage)
 * [Contribute](#contribute)
 * [Test](#test)
@@ -11,18 +11,15 @@
 * [Questions](#questions)
 ## Description
 
-A portfolio created using gitconnected and React to call updated personal information. Information stays updated as I grow in this industry.
+A portfolio created using gitconnected and React to call updated personal information. Information stays updated as I grow in this industry. [Here]() is a link to the finished project!
+
+## Check It Out
+
+![](public\Projects.PNG)
 
 ## Usage
 
 Using these components allow a user to connect this to their gitconnected which would update with their personal information.
-
-## Contribute?
-
-
-
-## Test
-
 
 
 ## License

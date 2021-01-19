@@ -1,4 +1,3 @@
-import { TextAlignCenter16 } from '@carbon/icons-react';
 import React from 'react';
 import Layout from '../../components/Layout';
 import { SectionTitle, Pill } from '../../styles';
