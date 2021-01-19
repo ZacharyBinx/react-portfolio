@@ -1,3 +1,4 @@
+import { TextAlignCenter16 } from '@carbon/icons-react';
 import React from 'react';
 import Layout from '../../components/Layout';
 import { SectionTitle, Pill } from '../../styles';
@@ -7,7 +8,7 @@ const Projects = ({ user }) => {
   return (
     <Layout user={user}>
       <div>
-        <SectionTitle style={{fontFamily: 'Yusei Magic'}}>Projects</SectionTitle>
+        <SectionTitle style={{fontFamily: 'Yusei Magic', textAlign: 'center'}}>Projects</SectionTitle>
         <ul>
           {user.projects.map((project, i) => (
             <ProjectItem key={i}>
