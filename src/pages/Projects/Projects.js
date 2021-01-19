@@ -8,7 +8,7 @@ const Projects = ({ user }) => {
     <Layout user={user}>
       <div>
         <SectionTitle style={{fontFamily: 'Yusei Magic', textAlign: 'center'}}>Projects</SectionTitle>
-        <ul>
+        <ul className="list-margin">
           {user.projects.map((project, i) => (
             <ProjectItem key={i}>
               <ProjectTitle>{project.name}</ProjectTitle>
