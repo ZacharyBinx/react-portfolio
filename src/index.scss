@@ -33,6 +33,7 @@ main.bx--content {
 }
 .list-margin{
   margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .bx--side-nav__navigation {
@@ -59,4 +60,11 @@ a.bx--side-nav__link > .bx--side-nav__link-text,
 }
 .h2, .h3{
   font-family: 'Yusei Magic';
+}
+
+.imgProj {
+  // @media (max-width: 640px){
+    width: 100%;
+    margin: auto;
+  // }
 }

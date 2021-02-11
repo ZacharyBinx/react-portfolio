@@ -12,7 +12,7 @@ const Projects = ({ user }) => {
           {user.projects.map((project, i) => (
             <ProjectItem key={i}>
               <ProjectTitle>{project.name}</ProjectTitle>
-              <img src={project.images[0].resolutions.mobile.url} alt= 'project'/>
+              <img className="imgProj" src={project.images[0].resolutions.mobile.url} alt= 'project'/>
               <p style={{fontFamily: 'Josefin Sans'}}>{project.summary}</p>
               <SkillContainer>
                 {[...project.languages, ...project.libraries].map((item, j) => (
