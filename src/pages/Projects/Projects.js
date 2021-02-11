@@ -6,14 +6,13 @@ import { ProjectItem, ProjectTitle, SkillContainer } from './styles';
 const Projects = ({ user }) => {
   return (
     <Layout user={user}>
-      <div>
+      <div style={{width: '100%', margin: 0 }}>
         <SectionTitle style={{fontFamily: 'Yusei Magic', textAlign: 'center'}}>Projects</SectionTitle>
         <ul className="list-margin">
           {user.projects.map((project, i) => (
             <ProjectItem key={i}>
               <ProjectTitle>{project.name}</ProjectTitle>
-              {console.log(project.images)}
-              <img src={project.images[0].resolutions.thumbnail.url} alt= 'project'/>
+              <img src={project.images[0].resolutions.mobile.url} alt= 'project'/>
               <p style={{fontFamily: 'Josefin Sans'}}>{project.summary}</p>
               <SkillContainer>
                 {[...project.languages, ...project.libraries].map((item, j) => (

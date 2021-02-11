@@ -10,14 +10,15 @@ a {
 
 
 main.bx--content {
-  background: url('./assets/mainBG.jpg');
-  background-size: auto;
-  background-position: center;
+  background: url('/assets/mainBG.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
 }
 
 .info {
   background: rgba(0, 0, 0, 0.5);
-  width: 60%;
+  width: 80%;
   border: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   margin-left: 0.75rem;
